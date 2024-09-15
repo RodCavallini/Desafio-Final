@@ -46,7 +46,7 @@ def salva_bd(df, nome_tabela):
 
     conn.close()
 
-    return True
+    return f"Base {nome_tabela} salva com sucesso"
 
 def carrega_bd(nome_tabela):
     conn = sqlite3.connect('coderhouse.db')
