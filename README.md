@@ -15,15 +15,15 @@ Notificação de sucesso ou falha na extração e tratamento dos dados.
 ### Bibliotecas Necessárias 📚
 * import pandas as pd
 * import sqlite3
-from datetime import datetime
-from plyer import notification 
-import requests
-import functions as f (Arquivo .py com as funções utilizadas)
+* from datetime import datetime
+* from plyer import notification 
+* import requests
+* import functions as f (Arquivo .py com as funções utilizadas)
 
 ### Endpoints utilizados:
-Bancos: https://brasilapi.com.br/api/banks/v1
-Pix : https://brasilapi.com.br/api/pix/v1/participants/
-Corretoras : https://brasilapi.com.br/api/cvm/corretoras/v1
+* Bancos: https://brasilapi.com.br/api/banks/v1
+* Pix : https://brasilapi.com.br/api/pix/v1/participants/
+* Corretoras : https://brasilapi.com.br/api/cvm/corretoras/v1
 
 ### Tratamento e Manipulação dos Dados 🛠️
 Renomeando de colunas:
