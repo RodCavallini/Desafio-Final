@@ -13,8 +13,8 @@ Armazenamento dos dados em banco de dados SQLite.
 Notificação de sucesso ou falha na extração e tratamento dos dados.
 
 ### Bibliotecas Necessárias 📚
-import pandas as pd
-import sqlite3
+* import pandas as pd
+* import sqlite3
 from datetime import datetime
 from plyer import notification 
 import requests
