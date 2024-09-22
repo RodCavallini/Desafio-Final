@@ -49,6 +49,9 @@ Coluna "nome_social" na tabela corretoras renomeada para "nome"
 Coluna "inicio_operacao" na tabela Pix alterada para Data
 Coluna "valor_patrimonio_liquido" na tabela corretoras alterada para Float
 
+* Adicionando colunas
+Adicionado coluna "Ano_Inicio_Situacao" na tabela corretoras
+  
 * Melhorando valores ausentes:
 Exclusão de 2 linhas na tabela Bancos e alteração de valores "NAN" para "0" na coluna CODE.
 
