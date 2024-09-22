@@ -25,6 +25,7 @@ Notificação de sucesso ou falha na extração e tratamento dos dados.
 * Pix : https://brasilapi.com.br/api/pix/v1/participants/
 * Corretoras : https://brasilapi.com.br/api/cvm/corretoras/v1
 
+
 Ambiente Virtual 🌐
 
 Criar ambiente:
