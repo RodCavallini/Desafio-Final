@@ -7,8 +7,20 @@ import requests
 
 
 def get_url(url):
-    response = requests.get(url)  
+    """
+    Função para importar dados de API
 
+    Args:
+
+        url (string): url da API
+
+    Returns:
+
+    Dados da API selecionada
+
+    """
+    
+    response = requests.get(url)
     if response.status_code == 200:
         data_json = response.json()
         notification.notify(
@@ -26,7 +38,19 @@ def get_url(url):
 
 
 def tabelas_bd():
+    """
+    
+        Função para mostrar as tabelas  
 
+        Args:
+
+        sem argumento
+
+        Returns:
+
+        retorna as tabelas 
+    """
+      
     conn = sqlite3.connect('coderhouse.db')
 
     # Executar uma consulta que retorna as informações do esquema do banco de dados
@@ -37,8 +61,22 @@ def tabelas_bd():
 
     return schema
 
+
 def salva_bd(df, nome_tabela):
+    """
     
+        Função para salvas banco de dados  
+
+        Args:
+
+        df (string) : nome do banco de dados
+        nome_tabela (string) : nome da tabela
+
+        Returns:
+
+        Tabela salva no banco de dados
+    """
+
     conn = sqlite3.connect('coderhouse.db')
 
     # Escrever o DataFrame na tabela 'nome_tabela'
@@ -48,7 +86,21 @@ def salva_bd(df, nome_tabela):
 
     return f"Base {nome_tabela} salva com sucesso"
 
+
 def carrega_bd(nome_tabela):
+    """
+    
+        Função para carregar tabela  
+
+        Args:
+
+        nome_tabela (string) : nome da tabela
+
+        Returns:
+
+        Tabela carregada
+    """
+
     conn = sqlite3.connect('coderhouse.db')
 
     # Executar uma consulta SELECT na tabela 'produtos' e converter em um DataFrame
